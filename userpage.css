@@ -1,0 +1,156 @@
+/* HAVEN — Discord-like Settings (basic CSS) */
+
+/* RESET */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; font-family: Arial, Helvetica, sans-serif; background: #030303; color: #efece6; -webkit-font-smoothing: antialiased; }
+
+/* App shell */
+.app-shell { display: flex; min-height: 100vh; }
+
+/* LEFT NAV */
+.left-nav {
+  width: 260px;
+  background: #0b0b0b;
+  border-right: 1px solid rgba(255,255,255,0.03);
+  padding: 20px;
+  flex-shrink: 0;
+}
+.logo {
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #d9cfa8;
+  margin-bottom: 12px;
+}
+.search {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.03);
+  background: #0e0e0e;
+  color: #efece6;
+  margin-bottom: 18px;
+}
+.nav-section-title {
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  margin: 14px 0 8px;
+  font-weight: 700;
+}
+.nav-list .nav-item {
+  display: block;
+  padding: 8px 10px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.82);
+  background: transparent;
+  font-size: 14px;
+}
+.nav-list .nav-item.active {
+  background: linear-gradient(90deg, rgba(201,173,102,0.06), rgba(201,173,102,0.02));
+  color: #efe6d8;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  padding: 28px 36px;
+  overflow:auto;
+}
+.page-header { display:flex; justify-content:space-between; align-items:center; margin-bottom: 18px; }
+.page-header h1 { font-size:22px; color:#efece6; }
+.key-hint { color: rgba(255,255,255,0.45); font-size:12px; }
+
+/* Tabs */
+.tabs { display:flex; gap:12px; margin-bottom: 18px; }
+.tab {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: transparent;
+  color: rgba(255,255,255,0.72);
+  border: none;
+  cursor:pointer;
+}
+.tab.active {
+  color: #efe6d8;
+  box-shadow: inset 0 -2px 0 #c9ad66;
+  font-weight:700;
+}
+
+/* CONTENT GRID */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 22px;
+  align-items:start;
+}
+
+/* PROFILE CARD (left) */
+.profile-card {
+  background: rgba(10,10,10,0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(201,173,102,0.06);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+  overflow: hidden;
+}
+
+/* card top */
+.card-top { position: relative; padding: 18px; display:flex; gap:16px; align-items:center; }
+.banner { position:absolute; inset:0 0 auto 0; height:72px; background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00)); top:0; }
+.avatar-wrap { width:80px; height:80px; border-radius:10px; overflow:hidden; border:1px solid rgba(255,255,255,0.03); box-shadow: 0 6px 20px rgba(0,0,0,0.6); }
+.avatar { width:100%; height:100%; object-fit:cover; display:block; }
+.user-info { flex:1; padding-left:6px; margin-top: 8px;}
+.display-name { font-size:18px; font-weight:800; color:#efe6d8; margin-bottom:4px; }
+.user-sub { font-size:13px; color: rgba(255,255,255,0.6); margin-bottom:8px; }
+.badges { display:flex; gap:8px; flex-wrap:wrap; }
+.pill {
+  font-size:12px; padding:6px 10px; border-radius:999px;
+  background: rgba(255,255,255,0.02); color: rgba(255,255,255,0.88); border:1px solid rgba(255,255,255,0.03);
+}
+.pill.gold { color:#c9ad66; border-color: rgba(201,173,102,0.14); }
+
+/* edit button top-right */
+.edit-btn {
+  padding:8px 12px; border-radius:10px; background: linear-gradient(180deg,#d4b969,#b88a41);
+  border:none; color:#060504; font-weight:700; cursor:pointer;
+}
+
+/* card body fields */
+.card-body { padding: 12px 18px 18px; display:flex; flex-direction:column; gap:12px; }
+.field { display:flex; align-items:center; gap:12px; padding:10px; background: rgba(0,0,0,0.25); border-radius:10px; border: 1px solid rgba(255,255,255,0.02); }
+.field-title { width:140px; color: rgba(255,255,255,0.75); font-weight:700; }
+.field-value { flex:1; color: rgba(255,255,255,0.85); }
+.field .small { padding:6px 10px; border-radius:8px; font-size:13px; }
+
+/* masked + reveal */
+.masked { color: rgba(255,255,255,0.55); }
+.reveal { color: #c9ad66; margin-left:8px; font-weight:700; cursor:pointer; font-size:13px; }
+
+/* field actions right */
+.field-actions { display:flex; gap:8px; align-items:center; }
+
+/* small buttons */
+.btn.small { padding:8px 10px; border-radius:8px; font-weight:700; font-size:13px; border:1px solid rgba(255,255,255,0.04); background:transparent; cursor:pointer; }
+
+/* AUTH SECTION (right column) */
+.auth-section { background: transparent; }
+.auth-section h2 { font-size:18px; margin-bottom:8px; color:#efe6d8; }
+.muted { color: rgba(255,255,255,0.6); margin-bottom:12px; }
+.btn.primary { padding:10px 14px; border-radius:10px; background: linear-gradient(180deg,#d4b969,#b88a41); border:none; color:#060504; font-weight:700; cursor:pointer; }
+.btn.full { width:100%; margin-bottom:16px; }
+.auth-box { background: rgba(255,255,255,0.02); padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,0.03); margin-bottom:12px; }
+
+/* link-like actions */
+.link { background:transparent; color: rgba(255,255,255,0.85); border:none; cursor:pointer; text-decoration:underline; font-size:13px; }
+
+/* GHOST button */
+.btn.ghost { padding:8px 12px; border-radius:10px; background: rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.03); color:inherit; cursor:pointer; }
+
+/* RESPONSIVE: stack columns under 980px */
+@media (max-width: 980px) {
+  .content-grid { grid-template-columns: 1fr; }
+  .left-nav { display:none; } /* on small screens hide left nav like Discord */
+  .main-content { padding: 18px; }
+  .app-shell { align-items:flex-start; }
+}

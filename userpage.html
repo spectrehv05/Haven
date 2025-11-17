@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Haven — My Account</title>
+  <link rel="stylesheet" href="userpage.css">
+</head>
+<body>
+  <div class="app-shell">
+
+    <!-- LEFT NAV (like Discord) -->
+    <aside class="left-nav">
+      <div class="nav-top">
+        <div class="logo">HAVEN</div>
+        <input class="search" placeholder="Search" aria-label="Search settings">
+      </div>
+
+      <nav class="nav-list">
+        <div class="nav-section-title">USER SETTINGS</div>
+        <a class="nav-item active" href="#">My Account</a>
+        <a class="nav-item" href="#">Profiles</a>
+        <a class="nav-item" href="#">Content &amp; Social</a>
+        <a class="nav-item" href="#">Data &amp; Privacy</a>
+        <a class="nav-item" href="#">Family Centre</a>
+
+        <div class="nav-section-title">PAYMENT SETTINGS</div>
+        <a class="nav-item" href="#">Upper Crust</a>
+        <a class="nav-item" href="#">Server Boost</a>
+
+        <div class="nav-section-title">APP SETTINGS</div>
+        <a class="nav-item" href="#">Appearance</a>
+        <a class="nav-item" href="#">Voice &amp; Video</a>
+        <a class="nav-item" href="#">Chat</a>
+      </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <header class="page-header">
+        <h1>My Account</h1>
+        <div class="header-right">
+          <div class="key-hint">ESC</div>
+        </div>
+      </header>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab active">Security</button>
+        <button class="tab">Standing</button>
+      </div>
+
+      <!-- Content area -->
+      <section class="content-grid">
+        <!-- Profile Card (like Discord) -->
+        <div class="profile-card">
+          <div class="card-top">
+            <div class="banner"></div>
+            <div class="avatar-wrap">
+              <img class="avatar" src="https://64.media.tumblr.com/99579959082966dd93c42cd8862b7870/cd0d00e506c85624-08/s500x750/3cef7540b08da2bd3ee2efc6daf6cbb864e280c2.jpg" alt="avatar">
+            </div>
+            <div class="user-info">
+              <div class="display-name">Daisuke Kanbe</div>
+              <div class="user-sub">@Daisuke</div>
+              <div class="badges">
+                <span class="pill gold">Verified Identity</span>
+                <span class="pill">Private</span>
+              </div>
+            </div>
+            <button class="btn edit-btn">Edit User Profile</button>
+          </div>
+
+          <div class="card-body">
+            <div class="field">
+              <div class="field-title">Display Name</div>
+              <div class="field-value">Daisuke Kanbe</div>
+              <button class="btn small">Edit</button>
+            </div>
+
+            <div class="field">
+              <div class="field-title">Username</div>
+              <div class="field-value">DaisukeKanbe_</div>
+              <button class="btn small">Edit</button>
+            </div>
+
+            <div class="field">
+              <div class="field-title">Email</div>
+              <div class="field-value masked">***********@gmail.com <span class="reveal">Reveal</span></div>
+              <button class="btn small">Edit</button>
+            </div>
+
+            <div class="field">
+              <div class="field-title">Phone Number</div>
+              <div class="field-value masked">********3255 <span class="reveal">Reveal</span></div>
+              <div class="field-actions">
+                <button class="link">Remove</button>
+                <button class="btn small">Edit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: password & auth (stacked under the card on narrow screens) -->
+        <div class="auth-section">
+          <h2>Password and Authentication</h2>
+          <p class="muted">Protect your Haven account. Enabling two-step options increases security.</p>
+          <button class="btn primary full">Change Password</button>
+
+          <div class="auth-box">
+            <h3>Authenticator App</h3>
+            <p class="muted">Protect your account with an extra layer of security. After setup, you’ll need your password and a code to sign in.</p>
+            <button class="btn primary">Enable Authenticator App</button>
+          </div>
+
+          <div class="auth-box">
+            <h3>Two-factor SMS</h3>
+            <p class="muted">Add a phone number to receive codes by SMS.</p>
+            <button class="btn ghost">Manage Phone</button>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+</body>
+</html>

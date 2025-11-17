@@ -1,0 +1,142 @@
+/* Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    height: 100vh;
+
+    background-image: url("loginback.jpeg");
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #e6e6e8;
+}
+
+/* HAVEN Brand */
+.brand {
+    font-size: 48px;
+    letter-spacing: 12px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-left: 16px;
+    background: linear-gradient(90deg, #f2d37c, #d6b45c, #fff1bf);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 0.5s ease;
+    text-align: center;
+
+    text-shadow: 0 0 20px rgba(255, 215, 110, 0.35);
+}
+.brand:hover{
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.941);
+    letter-spacing: 30px;
+}
+
+/* Login Panel */
+.login-container {
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 206, 115, 0.15);
+    padding: 40px 50px;
+    border-radius: 22px;
+    width: 360px;
+    box-shadow: 0 0 35px rgba(255, 185, 80, 0.18);
+    transition: 0.25s ease-in-out;
+}
+
+/* Golden Glow on Hover */
+.glow-panel:hover {
+    box-shadow: 0 0 50px rgba(255, 200, 90, 0.45);
+    transform: scale(1.02);
+}
+
+/* Titles */
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+
+    background: linear-gradient(90deg, #f8e3a1, #f3c86f);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 28px;
+    opacity: 0.75;
+    text-align: center;
+}
+
+/* Labels */
+label {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+input:focus {
+    outline: 2px solid #e7c46b;
+    box-shadow: 0 0 10px rgba(255, 215, 90, 0.3);
+    font-size: 15px;
+}
+input::placeholder{
+    color: white;
+    opacity: 50%;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+
+    background: linear-gradient(135deg, #e7c46b, #b89a53);
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.login-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 215, 90, 0.5);
+}
+
+/* Footer Text */
+.footer-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.footer-text:hover {
+    opacity: 0.9;
+    text-shadow: 0 0 10px rgba(255, 215, 90, 0.4);
+}

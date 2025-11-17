@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAVEN – Home</title>
+    <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+    <!-- LEFT SERVER ICON BAR -->
+    <div class="server-bar">
+        <div class="server-icon">
+            <!-- HAVEN LOGO SVG -->
+            <svg width="60" height="60" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="20" width="160" height="160" rx="22" stroke="#c3a76f" stroke-width="10"/>
+                <circle cx="100" cy="100" r="72" stroke="#c3a76f55" stroke-width="6"/>
+                <circle cx="100" cy="100" r="86" stroke="#c3a76f22" stroke-width="4"/>
+                <path d="M60 140 V60 L100 90 L140 60 V140" stroke="#c3a76f" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+                <path d="M100 90 V140" stroke="#c3a76f88" stroke-width="8" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="server-icon empty"></div>
+        <div class="server-icon empty"></div>
+        <div class="server-icon empty"></div>
+    </div>
+
+    <!-- CHANNEL SECTION -->
+    <div class="channels-panel">
+        <h2 class="panel-title">SECTIONS</h2>
+
+        <ul class="channel-list">
+            <li class="channel">⧉ members-only</li>
+            <li class="channel">⧉ inner-circle</li>
+            <li class="channel">⧉ the-musa-hedron</li>
+            <li class="channel">⧉ internal-pipeline</li>
+            <li class="channel">⧉ elite-announcements</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <!-- VOICE CHANNEL -->
+        <h2 class="panel-title">VOICE</h2>
+        <ul class="voice-list">
+            <li class="voice-channel">
+                <span class="vc-dot"></span> HAVEN HQ ⦿ LIVE
+            </li>
+        </ul>
+
+        <!-- USER PROFILE BAR -->
+        <a href="userpage.html" class="user-profile-link"></a>
+        <div class="user-profile">
+            <div class="pfp"></div>
+            <div class="user-info">
+                <div class="username">HV</div>
+                <div class="status">Online</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CHAT AREA -->
+    <div class="chat-panel">
+        <div class="chat-header">HAVEN // Elite Network</div>
+
+        <div class="chat-box">
+            <div class="msg other">Welcome to HAVEN. Only the worthy remains.</div>
+            <div class="msg self">Access confirmed.</div>
+            <div class="msg other">Inner Circle channel unlocked.</div>
+        </div>
+
+       <div class="chat-input">
+
+            <!-- DOCUMENT ICON -->
+            <button class="chat-btn icon-btn">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c3a76f" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+            </button>
+
+            <!-- CAMERA / IMAGE ICON -->
+            <button class="chat-btn icon-btn">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c3a76f" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                    <circle cx="12" cy="13" r="4"></circle>
+                </svg>
+            </button>
+
+            <input class="chat-input-m" type="text" placeholder="Whisper into the HAVEN frequency ⋆⟢⋆" />
+
+            <!-- SEND ICON -->
+            <button class="chat-btn send-btn">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c3a76f" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 2L11 13"></path>
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+                </svg>
+            </button>
+
+       </div>
+    </div>
+
+    <!-- ================= EXAMPLE PROFILES (Right-side) ================= -->
+    <div class="profiles-panel" aria-label="Example user profiles">
+      <div class="profiles-header">
+        <div class="profiles-title">Members</div>
+        <div class="profiles-sub">Select a profile to view</div>
+      </div>
+
+      <!-- Profile card 1 -->
+      <div class="profile-card">
+        <div class="profile-left">
+          <div class="profile-pfp pfp-gold"></div>
+          
+        </div>
+        <div class="profile-center">
+          <div class="profile-name">Patrick Bateman<span class="profile-tag">• Verified</span></div>
+          <div class="profile-role">Access: Restricted</div>
+          <div class="profile-badges">
+            <span class="pb">Verified Identity</span>
+            <span class="pb">NDA</span>
+          </div>
+        </div>
+        <div class="profile-actions">
+          <button class="btn small">Message</button>
+          <button class="btn gold small">Request</button>
+        </div>
+      </div>
+
+      <!-- Profile card 2 -->
+      <div class="profile-card">
+        <div class="profile-left">
+          <div class="profile-pfp pfp-dark"></div>
+        </div>
+        <div class="profile-center">
+          <div class="profile-name">Jay Gatsby <span class="profile-tag">• Private</span></div>
+          <div class="profile-role">Access: Inner Circle</div>
+          <div class="profile-badges">
+            <span class="pb">Private</span>
+            <span class="pb">VIP</span>
+          </div>
+        </div>
+        <div class="profile-actions">
+          <button class="btn small">Message</button>
+          <button class="btn small">Request</button>
+        </div>
+      </div>
+
+      <!-- Profile card 3 -->
+      <div class="profile-card">
+        <div class="profile-left">
+          <div class="profile-pfp pfp-slate"></div>
+        </div>
+        <div class="profile-center">
+          <div class="profile-name">Serena van der Woodsen<span class="profile-tag">• NDA</span></div>
+          <div class="profile-role">Access: Restricted</div>
+          <div class="profile-badges">
+            <span class="pb">NDA Protected</span>
+          </div>
+        </div>
+        <div class="profile-actions">
+          <button class="btn small">Message</button>
+          <button class="btn gold small">Request</button>
+        </div>
+      </div>
+
+      <div class="profiles-footer">Showing 3 of 128 members</div>
+    </div>
+    <!-- ================= END EXAMPLE PROFILES ================= -->
+
+</body>
+</html>
