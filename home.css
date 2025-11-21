@@ -61,6 +61,7 @@ body {
 }
 
 .server-icon:hover {
+    margin-top: 10px;
     background: #c3a76f22;
     border-color: #c3a76f;
     transform: scale(1.1);
@@ -143,21 +144,32 @@ body {
     align-items: center;
     padding: 10px;
     gap: 12px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .user-profile:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 20px #ffffff12;
+    box-shadow: 0 2px 20px #ffffff;
 }
 
-/* PFP */
 .pfp {
     width: 42px;
     height: 42px;
-    background: #333;
+    background-image: url("https://64.media.tumblr.com/99579959082966dd93c42cd8862b7870/cd0d00e506c85624-08/s500x750/3cef7540b08da2bd3ee2efc6daf6cbb864e280c2.jpg");
+    background-size: cover;        /* fills the circle */
+    background-position: center;   /* centers the image */
+    background-repeat: no-repeat;  /* removes tiling */
+    
     border-radius: 50%;
     border: 2px solid #c3a76f55;
+}
+a {
+    color: White;       /* Use the parent color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:visited {
+    color: white;       /* Prevent purple visited color */
 }
 
 /* ================= CHAT PANEL ================= */
@@ -271,13 +283,17 @@ body {
     color: #eaeaea;
     padding: 12px;
     border-radius: 10px;
-    transition: 0.3s;
+    outline: none;
+    transition: 0.3s ease;
 }
 
 .chat-input-m:focus {
     border-color: #c3a76f;
     box-shadow: 0 0 12px #c3a76f44;
+    outline: none;
+    transform: scale(1.02);
 }
+
 
 /* Chat Buttons */
 .chat-btn {
@@ -404,12 +420,27 @@ body {
 }
 
 /* actions: right side */
-.profile-actions { display:flex; flex-direction:column; gap:8px; align-items:flex-end; }
-.btn.small { padding:8px 10px; border-radius:10px; font-weight:700; background: transparent; border:1px solid rgba(255,255,255,0.04); color:inherit; cursor:pointer; }
-.btn.gold.small {
-    background: linear-gradient(180deg,#d4b969,#b88a41);
-    color:#060504; border:none; box-shadow:0 8px 18px rgba(184,138,65,0.08);
+.profile-actions { display:flex; flex-direction:column; gap:4px; align-items:flex-end; }
+.btn.small {
+    width: 80px;     /* set any size you want */
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    background: white;
+    border: none;
+    color: inherit;
+    cursor: pointer;
 }
+
+.btn.gold.small {
+    width: 80px;     /* must match */
+    background: linear-gradient(180deg,#d4b969,#b88a41);
+    color:#060504;
+    border: none;
+    box-shadow:0 8px 18px rgba(184,138,65,0.08);
+}
+
 
 /* footer */
 .profiles-footer { color: rgba(255,255,255,0.45); font-size:12px; margin-top:6px; }
