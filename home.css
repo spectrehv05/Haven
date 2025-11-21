@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     font-family: "Inter", sans-serif;
 }
 
-/* BODY */
+
 body {
     background: linear-gradient(135deg, #0a0a0a, #111, #0d0d0d);
     background-size: 400% 400%;
@@ -22,7 +22,7 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* CUSTOM SCROLLBAR */
+
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -34,7 +34,7 @@ body {
     background: #c3a76f;
 }
 
-/* ================= LEFT SERVER BAR ================= */
+
 .server-bar {
     width: 80px;
     background: #111;
@@ -68,7 +68,7 @@ body {
     box-shadow: 0 0 18px #c3a76f88;
 }
 
-/* ================= CHANNELS PANEL ================= */
+
 .channels-panel {
     width: 280px;
     background: #141414;
@@ -100,7 +100,7 @@ body {
     padding-left: 14px;
 }
 
-/* Divider */
+
 .divider {
     width: 100%;
     height: 1px;
@@ -108,7 +108,7 @@ body {
     margin: 20px 0;
 }
 
-/* Voice */
+
 .voice-channel {
     display: flex;
     gap: 8px;
@@ -131,7 +131,6 @@ body {
     border-radius: 50%;
 }
 
-/* USER PROFILE */
 .user-profile {
     position: absolute;
     bottom: 20px;
@@ -156,23 +155,23 @@ body {
     width: 42px;
     height: 42px;
     background-image: url("https://64.media.tumblr.com/99579959082966dd93c42cd8862b7870/cd0d00e506c85624-08/s500x750/3cef7540b08da2bd3ee2efc6daf6cbb864e280c2.jpg");
-    background-size: cover;        /* fills the circle */
-    background-position: center;   /* centers the image */
-    background-repeat: no-repeat;  /* removes tiling */
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
     
     border-radius: 50%;
     border: 2px solid #c3a76f55;
 }
 a {
-    color: White;       /* Use the parent color */
-    text-decoration: none; /* Remove underline */
+    color: White;       
+    text-decoration: none; 
 }
 
 a:visited {
-    color: white;       /* Prevent purple visited color */
+    color: white;       
 }
 
-/* ================= CHAT PANEL ================= */
+
 .chat-panel {
     flex-grow: 1;
     display: flex;
@@ -181,7 +180,7 @@ a:visited {
     min-width: 0;
 }
 
-/* Glass Header */
+
 .chat-header {
     height: 60px;
     padding-left: 25px;
@@ -195,7 +194,7 @@ a:visited {
     z-index: 2;
 }
 
-/* CHAT BOX */
+
 .chat-box {
     flex-grow: 1;
     padding: 25px;
@@ -214,7 +213,7 @@ a:visited {
     border-radius: 10px;
 }
 
-/* Messages */
+
 .msg {
     max-width: 60%;
     padding: 12px 16px;
@@ -242,7 +241,7 @@ a:visited {
     color: #dcdcdc;
 }
 
-/* Typing Indicator */
+
 .typing {
     display: flex;
     gap: 6px;
@@ -264,7 +263,7 @@ a:visited {
     100% { opacity: 0.3; transform: translateY(0); }
 }
 
-/* ================= INPUT AREA ================= */
+
 .chat-input {
     background: #111;
     border-top: 1px solid #1f1f1f;
@@ -295,7 +294,7 @@ a:visited {
 }
 
 
-/* Chat Buttons */
+
 .chat-btn {
     width: 45px;
     height: 45px;
@@ -334,7 +333,7 @@ a:visited {
     transform: scale(1.1);
 }
 
-/* subtle background accent in chat panel */
+
 .chat-panel::before {
     content: "";
     position: absolute;
@@ -344,7 +343,6 @@ a:visited {
     z-index: 0;
 }
 
-/* keep chat content above accents */
 .chat-box, .chat-header { position: relative; z-index: 2; }
 .msg { animation: fadeInUp 0.4s ease; }
 @keyframes fadeInUp {
@@ -356,7 +354,6 @@ a:visited {
     border-color: #c3a76f;
 }
 
-/* ================= STYLES: Profiles panel (HAVEN theme) ================= */
 .profiles-panel {
     width: 320px;
     background: linear-gradient(180deg, rgba(10,10,10,0.6), rgba(8,8,8,0.6));
@@ -368,12 +365,12 @@ a:visited {
     overflow-y: auto;
 }
 
-/* header */
+
 .profiles-header { margin-bottom:6px; }
 .profiles-title { color: #c3a76f; font-weight:800; letter-spacing:1px; font-size:14px; }
 .profiles-sub { color: rgba(255,255,255,0.55); font-size:12px; margin-top:4px; }
 
-/* each profile */
+
 .profile-card {
     display: flex;
     gap: 12px;
@@ -390,7 +387,7 @@ a:visited {
     box-shadow: 0 14px 36px rgba(0,0,0,0.6), 0 0 20px rgba(195,167,111,0.06);
 }
 
-/* left: avatar */
+
 .profile-left { flex-shrink:0; }
 .profile-pfp {
     width:52px;
@@ -401,12 +398,12 @@ a:visited {
     box-shadow: inset 0 2px 8px rgba(0,0,0,0.6);
 }
 
-/* variations for visuals (replace with images if you want) */
+
 .pfp-gold { background-image: linear-gradient(180deg,#2b2418,#171515); border-color: rgba(195,167,111,0.22); }
 .pfp-dark { background-image: linear-gradient(180deg,#141212,#0b0b0b); }
 .pfp-slate { background-image: linear-gradient(180deg,#22242a,#0d0f12); }
 
-/* center: text */
+
 .profile-center { flex:1; min-width:0; }
 .profile-name { font-weight:800; color:#efe6d8; font-size:15px; display:flex; align-items:center; gap:8px; }
 .profile-tag { color: rgba(195,167,111,0.9); font-weight:700; font-size:12px; margin-left:6px; }
@@ -419,10 +416,10 @@ a:visited {
     color: rgba(255,255,255,0.85);
 }
 
-/* actions: right side */
+
 .profile-actions { display:flex; flex-direction:column; gap:4px; align-items:flex-end; }
 .btn.small {
-    width: 80px;     /* set any size you want */
+    width: 80px;    
     text-align: center;
     padding: 8px 10px;
     border-radius: 10px;
@@ -434,7 +431,7 @@ a:visited {
 }
 
 .btn.gold.small {
-    width: 80px;     /* must match */
+    width: 80px;     
     background: linear-gradient(180deg,#d4b969,#b88a41);
     color:#060504;
     border: none;
@@ -442,10 +439,10 @@ a:visited {
 }
 
 
-/* footer */
+
 .profiles-footer { color: rgba(255,255,255,0.45); font-size:12px; margin-top:6px; }
 
-/* Responsive: hide profiles panel on smaller screens so layout doesn't break */
+
 @media (max-width: 1100px) {
     .profiles-panel { display: none; }
     .channels-panel { width: 240px; }

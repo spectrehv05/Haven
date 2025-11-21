@@ -1,4 +1,4 @@
-/* Background */
+
 body {
     margin: 0;
     padding: 0;
@@ -16,7 +16,6 @@ body {
     color: #e6e6e8;
 }
 
-/* HAVEN Brand */
 .brand {
     font-size: 48px;
     letter-spacing: 12px;
@@ -36,7 +35,6 @@ body {
     letter-spacing: 30px;
 }
 
-/* Login Panel */
 .login-container {
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.04);
@@ -49,13 +47,12 @@ body {
     transition: 0.25s ease-in-out;
 }
 
-/* Golden Glow on Hover */
+
 .glow-panel:hover {
     box-shadow: 0 0 50px rgba(255, 200, 90, 0.45);
     transform: scale(1.02);
 }
 
-/* Titles */
 .title {
     font-size: 28px;
     font-weight: 600;
@@ -74,13 +71,13 @@ body {
     text-align: center;
 }
 
-/* Labels */
+
 label {
     font-size: 13px;
     opacity: 0.9;
 }
 
-/* Inputs */
+
 input {
     width: 100%;
     padding: 12px;
@@ -106,7 +103,7 @@ input::placeholder{
     opacity: 50%;
 }
 
-/* Login Button */
+
 .login-btn {
     width: 100%;
     padding: 12px;
@@ -127,7 +124,6 @@ input::placeholder{
     box-shadow: 0 0 15px rgba(255, 215, 90, 0.5);
 }
 
-/* Footer Text */
 .footer-text {
     text-align: center;
     margin-top: 20px;

@@ -1,13 +1,13 @@
-/* HAVEN — Discord-like Settings (basic CSS) */
 
-/* RESET */
+
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html,body { height: 100%; font-family: Arial, Helvetica, sans-serif; background: #030303; color: #efece6; -webkit-font-smoothing: antialiased; }
 
-/* App shell */
+
 .app-shell { display: flex; min-height: 100vh; }
 
-/* LEFT NAV */
+
 .left-nav {
   width: 260px;
   background: #0b0b0b;
@@ -52,7 +52,7 @@ html,body { height: 100%; font-family: Arial, Helvetica, sans-serif; background:
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
 }
 
-/* MAIN CONTENT */
+
 .main-content {
   flex: 1;
   padding: 28px 36px;
@@ -62,7 +62,7 @@ html,body { height: 100%; font-family: Arial, Helvetica, sans-serif; background:
 .page-header h1 { font-size:22px; color:#efece6; }
 .key-hint { color: rgba(255,255,255,0.45); font-size:12px; }
 
-/* Tabs */
+
 .tabs { display:flex; gap:12px; margin-bottom: 18px; }
 .tab {
   padding: 8px 12px;
@@ -78,7 +78,7 @@ html,body { height: 100%; font-family: Arial, Helvetica, sans-serif; background:
   font-weight:700;
 }
 
-/* CONTENT GRID */
+
 .content-grid {
   display: grid;
   grid-template-columns: 1fr 360px;
@@ -86,7 +86,7 @@ html,body { height: 100%; font-family: Arial, Helvetica, sans-serif; background:
   align-items:start;
 }
 
-/* PROFILE CARD (left) */
+
 .profile-card {
   background: rgba(10,10,10,0.6);
   border-radius: 12px;
@@ -110,30 +110,30 @@ html,body { height: 100%; font-family: Arial, Helvetica, sans-serif; background:
 }
 .pill.gold { color:#c9ad66; border-color: rgba(201,173,102,0.14); }
 
-/* edit button top-right */
+
 .edit-btn {
   padding:8px 12px; border-radius:10px; background: linear-gradient(180deg,#d4b969,#b88a41);
   border:none; color:#060504; font-weight:700; cursor:pointer;
 }
 
-/* card body fields */
+
 .card-body { padding: 12px 18px 18px; display:flex; flex-direction:column; gap:12px; }
 .field { display:flex; align-items:center; gap:12px; padding:10px; background: rgba(0,0,0,0.25); border-radius:10px; border: 1px solid rgba(255,255,255,0.02); }
 .field-title { width:140px; color: rgba(255,255,255,0.75); font-weight:700; }
 .field-value { flex:1; color: rgba(255,255,255,0.85); }
 .field .small { padding:6px 10px; border-radius:8px; font-size:13px; }
 
-/* masked + reveal */
+
 .masked { color: rgba(255,255,255,0.55); }
 .reveal { color: #c9ad66; margin-left:8px; font-weight:700; cursor:pointer; font-size:13px; }
 
-/* field actions right */
+
 .field-actions { display:flex; gap:8px; align-items:center; }
 
-/* small buttons */
+
 .btn.small { padding:8px 10px; border-radius:8px; font-weight:700; font-size:13px; border:1px solid rgba(255,255,255,0.04); background:transparent; cursor:pointer; }
 
-/* AUTH SECTION (right column) */
+
 .auth-section { background: transparent; }
 .auth-section h2 { font-size:18px; margin-bottom:8px; color:#efe6d8; }
 .muted { color: rgba(255,255,255,0.6); margin-bottom:12px; }
@@ -141,16 +141,16 @@ html,body { height: 100%; font-family: Arial, Helvetica, sans-serif; background:
 .btn.full { width:100%; margin-bottom:16px; }
 .auth-box { background: rgba(255,255,255,0.02); padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,0.03); margin-bottom:12px; }
 
-/* link-like actions */
+
 .link { background:transparent; color: rgba(255,255,255,0.85); border:none; cursor:pointer; text-decoration:underline; font-size:13px; }
 
-/* GHOST button */
+
 .btn.ghost { padding:8px 12px; border-radius:10px; background: rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.03); color:inherit; cursor:pointer; }
 
-/* RESPONSIVE: stack columns under 980px */
+
 @media (max-width: 980px) {
   .content-grid { grid-template-columns: 1fr; }
-  .left-nav { display:none; } /* on small screens hide left nav like Discord */
+  .left-nav { display:none; } 
   .main-content { padding: 18px; }
   .app-shell { align-items:flex-start; }
 }
